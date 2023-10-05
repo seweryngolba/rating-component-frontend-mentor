@@ -78,6 +78,32 @@ body {
   cursor: pointer;
 }
 
-.thank-you {
+.first-page {
   display: none;
+}
+
+.thank-you {
+  display: flex;
+  align-items: center;
+}
+
+.thanks-image {
+  width: 160px;
+}
+
+.your-selection {
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: hsla(216, 12%, 54%, 0.2);
+  color: hsl(25, 97%, 53%);
+}
+
+.thanks-title {
+  color: hsl(0, 0%, 100%);
+}
+
+.thanks-description {
+  color: hsla(0, 0%, 100%, 0.5);
+  text-align: center;
+  margin-top: -10px;
 }
