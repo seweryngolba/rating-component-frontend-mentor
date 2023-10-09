@@ -79,11 +79,11 @@ body {
 }
 
 .first-page {
-  display: none;
+  display: flex;
 }
 
 .thank-you {
-  display: flex;
+  display: none;
   align-items: center;
 }
 
