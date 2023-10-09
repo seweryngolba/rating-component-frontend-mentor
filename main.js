@@ -9,6 +9,14 @@ ratingElement.forEach((rate) => {
     ratingElement.forEach((r) => r.classList.remove("active"));
     rate.classList.add("active");
 
+    const activeRating = document.querySelector(".rating.active");
+
+    if (activeRating) {
+      submitBtn.disabled = false;
+    } else {
+      submitBtn.disabled = true;
+    }
+
     const selectedRating = rate.textContent;
 
     yourSelection.textContent = `You selected ${selectedRating} out of 5`;
@@ -19,3 +27,5 @@ submitBtn.addEventListener("click", () => {
   ratingPage.style.display = "none";
   thanksPage.style.display = "flex";
 });
+
+submitBtn.disabled = true;
